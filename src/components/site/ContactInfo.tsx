@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
+import { Phone, Mail, MessageCircle, Clock } from "lucide-react";
 import { Eyebrow, Heading, Section } from "./primitives";
 
 const CONTACT_DETAILS = [
@@ -19,12 +19,6 @@ const CONTACT_DETAILS = [
     label: "Email",
     value: "Touchwoodielts03@gmail.com",
     href: "mailto:Touchwoodielts03@gmail.com",
-  },
-  {
-    icon: MapPin,
-    label: "Address",
-    value: "Railway Road, Near Punjab and Sindh Bank, Banga Rural, Banga, Punjab 144505",
-    href: "https://maps.google.com/?q=Railway+Road+Banga+Punjab",
   },
 ];
 
@@ -52,8 +46,6 @@ export function ContactInfo() {
             <a
               key={contact.label}
               href={contact.href}
-              target={contact.label === "Address" ? "_blank" : undefined}
-              rel={contact.label === "Address" ? "noopener noreferrer" : undefined}
               className="group flex gap-4 rounded-lg border border-border bg-background/50 p-6 transition-all hover:border-gold/40 hover:bg-background hover:shadow-md"
             >
               <contact.icon className="mt-1 size-6 shrink-0 text-gold" aria-hidden />

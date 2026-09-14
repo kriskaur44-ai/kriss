@@ -13,7 +13,6 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { Gallery } from "@/components/site/Gallery";
 import { Faq } from "@/components/site/Faq";
 import { ContactInfo } from "@/components/site/ContactInfo";
-import { MapSection } from "@/components/site/MapSection";
 import { FinalCta } from "@/components/site/FinalCta";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
@@ -53,7 +52,6 @@ function Index() {
         <Gallery />
         <Faq />
         <ContactInfo />
-        <MapSection />
         <FinalCta />
       </main>
       <Footer />
